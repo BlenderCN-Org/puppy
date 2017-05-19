@@ -1,0 +1,27 @@
+addonName:
+  menu1:
+    options:
+      type: pie
+      shortcut: Alt+A
+      context: 3DView > EditMode
+    content:
+      - operator: "mesh.primitive_plane_add"
+      - "mesh.primitive_plane_add"
+      - operator: {"mesh.primitive_cube_add", name: "Cube", icon: "Custom or not"}
+      - separator
+      - box:
+        - label: "Coucou"
+        - operator: {"mesh.primitive_cube_add", name: "Cube", icon: "Custom or not"}
+  menu2:
+    options:
+      type: normal
+      shortcut: Alt+A
+      context: NodeEditor > Shading
+    content:
+      - operator: "mesh.primitive_plane_add"
+      - "mesh.primitive_plane_add"
+      - operator: {"mesh.primitive_cube_add", name: "Cube", icon: "Custom or not"}
+      - separator
+      - box:
+        - label: "Coucou"
+        - operator: {"mesh.primitive_cube_add", name: "Cube", icon: "Custom or not"}
